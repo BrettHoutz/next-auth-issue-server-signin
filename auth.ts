@@ -140,6 +140,9 @@ export const config = {
       return true
     },
   },
+  session: {
+    maxAge: 3600,
+  },
 } satisfies NextAuthConfig
 
 export const { handlers, auth, signIn, signOut } = NextAuth(config)
